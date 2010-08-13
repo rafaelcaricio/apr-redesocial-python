@@ -72,28 +72,167 @@
     <body>
         <div class="slide">
             <h1>Construindo sua própria rede social em <i>Python</i></h1>
-            <center><h2>Posibilidades, Experiências e Tecnologia</h2></center>
+            <center><h2>Tecnologia, Posibilidades e Experiências</h2></center>
+            <center>Por: <i>Rafael Carício</i><center>
         </div>
 
         <div class="slide">
-            <h1>Welcome to Slippy</h1>
-            <h2>Usage</h2>
+            <h1>Apresentação</h1>
+            <h2>Quem é Rafael Carício?</h2>
             <ul>
-                <li>Navigation: [Left]/[Right] arrows to move, [Space] or [Double Click] to go to next slide</li>
-                <li>Overview: [ESC]/[Del]/[Tab] to view, [Click] to pick one slide</li>
-                <li>Jump: Press [0-9] keys followed by [Enter] to go straight to one slide</li>
+                <li>Mestrando em Ciência da Computação no CIn - UFPE;</li>
+                <li>Sócio fundador da <a target="_bank" href="http://orygens.com/">Orygens</a>;</li>
+                <li>Louco por tecnologia;</li>
+                <li>Apaixonado por Python;</li>
+                <li>Encantado pelo Git;</li>
+                <li>...</li>
+                <li>Resumindo: <b>NERD</b>!</li>
             </ul>
+            <!--
+                Falar um pouco sobre mim e ser bem breve nessa parte.
+            -->
         </div>
 
         <div class="slide">
-            <h1>H1's are centered by default</h1>
-            <div class="vcenter">
-                <h2>The class "vcenter" on anything</h2>
-                <ul>
-                    <li>centers it</li>
-                    <li>vertically</li>
-                </ul>
+            <h1>Programação</h1>
+            <h2>O que você vai ver aqui?</h2>
+            <ul>
+                <li>Tecnologia;
+                    <ul><li>O que existe <b>open source</b> que pode me ajudar a criar minha rede social.</li></ul>
+                </li>
+                <li>Possibilidades;
+                    <ul><li>O que é importante para quando criar uma rede social e não ser mais uma cópia.</li></ul>
+                </li>
+                <li>Experiências!
+                    <ul><li>O que eu já experimentei e o que eu aprendi, até agora, com minha rede social.</li></ul>
+                </li>
+            </ul>
+<!--
+[Guia geral para a apresentação]
+
+Tecnologia:
+Dizer que vai mostrar tecnologias disponiveis na web para ajudar no desenvolvimento de uma nova rede. Muita coisa tem que ser feita.
+
+Cadastro de usuário, 
+login/logoff do usuario,
+validação de e-mail, 
+modificar senha, 
+esqueci a senha, 
+salvar o login, 
+configurações de recebimento de e-mail,
+enviar recado pra outro usuário,
+adicionar como amigo,
+notificar conteúdo indevido,
+uma forma de enviar avisos a todos os usuários do site de uma só vez,
+foto do perfil,
+perfil do usuario,
+pesquisa de usuário,
+exclusão de conta de usuário,
+comunidades com lista de discussão,
+pesquisa de grupos e no forúm,
+microblogging,
+...
+Coisas comuns em praticamente toda rede social.
+
+Mostrar que não precisa sair do zero.
+
+Funcionalidades que teem que ser implementadas antes e são bastante comuns em todos as redes sociais e na maioria dos sistemas web. 
+Motivado por este pensamento um cara tem a ideia de criar um "gerador de projetos em django". Mostrar o pinax (dizer o que é 
+e como funciona) criar 2 tipos de projetos usando o pinax. 
+
+Sobre o pinax, dizer que é feito sobre o django. É um engine que gera outros projetos em django já configurados e com funcionalidades básicas 
+já implementadas e funcionando. 
+
+Apresentar os principais projetos que existem dentro do pinax e como ajudam no desenvolvimento de uma rede social.
+
+Possibilidades:
+Utilizando estas tecnologias você pode focar no que é o diferencial da sua rede social e não perder tempo com coisas que são comuns.
+Agora você pode criar uma nova forma de iteração entre os seus usuários e focar no desenvolvimento disso.
+Redes que não tiveram um foco especifico como diferencial, acabaram indo por água a baixo.
+Exemplos: 
+http://www.gazzag.com/ -> http://www.octopop.com/
+http://www.1grau.com.br/
+
+Refs.: http://pt.wikipedia.org/wiki/1Grau, http://pt.wikipedia.org/wiki/Gazzag
+
+"Como vou fazer diferente? Tem tanta rede social por ai..."
+
+Faça diferente: 
+linkedin.com - Rede social de negócios;
+last.fm - Rede social de música;
+Livemocha.com - Rede social de pessoas que querem aprender outras linguas;
+Etc...
+
+"Isso só acontece no exterior? E aqui no Brasil, não dá pra inovar?"
+
+Exemplos nacionais:
+skoob.com.br - rede social de leitores, 
+filmow.com - rede social de cinéfolos (em python/django),
+atepassar.com - rede social de concurseiros;
+
+
+Experiências:
+Dizer que criou o atepassar.com e como foi/está sendo o desenvolvimento desta rede social.
+Mostrar como foi a concepção do AtéPassar até hoje. Quais os desafios que foram encontrados e quais os próximos desafios que estão
+por vir.
+-->
+        </div>
+
+        <div class="slide">
+            <div class="vcenter">            
+            <center>
+                <h2>"Tive uma ideia, vou criar uma <b>rede social</b>!"</h2>
+                <img src="fuliz.gif" alt="">
+            </center>
             </div>
+        </div>
+
+        <div class="slide">
+            <div class="vcenter">            
+                <h1>Funcionalidades que devem ser desenvolvidas e que toda rede social tem:</h1>
+                <center>
+                    <div>
+                        <span style="font-size:2.2em;"><b>cadastro de usuário</b></span>
+                        <span style="font-size:1.0em;">login/logoff do usuario</span>
+                        <span style="font-size:2.0em;">validação de e-mail</span>
+                        <span style="font-size:1.8em;">modificar senha</span> 
+                        <span style="font-size:2.2em;">esqueci a senha</span>
+                        <span style="font-size:1.3em;">configurações de recebimento de e-mail</span>
+                        <span style="font-size:1.6em;">enviar recado pra outro usuário</span>
+                        <span style="font-size:1.8em;"><b>adicionar como amigo</b></span>
+                        <span style="font-size:1.3em;">notificar conteúdo indevido</span>
+                        <span style="font-size:1.8em;"><b>foto do perfil</b></span>
+                        <span style="font-size:1.4em;">perfil do usuario</span>
+                        <span style="font-size:1.5em;">pesquisa de usuário</span>
+                        <span style="font-size:0.8em;">exclusão de conta de usuário</span>
+                        <span style="font-size:1.2em;">comunidades com lista de discussão</span>
+                        <span style="font-size:1.7em;">pesquisa de grupos e no forúm</span>
+                        <span style="font-size:1.0em;">microblogging</span>
+                    </div>
+                    <img src="fuuu.png" width="20%" heigth="20%" alt="">
+                </center>
+            </div>
+        </div>
+
+        <div class="slide">
+            <h1>Algém já pensou nisso...</h1>
+                <center>
+                    <img src="pinax_logo.png" alt="">
+                    <img src="seu-creysson.jpg" alt="">
+                    <h3>Seus problemas acabaram! :)</h3>
+                </center>
+        </div>
+
+        <div class="slide">
+            <h1>Pinax, o que é isso?</h1>
+            <h2>Uma plataforma para desenvolvimento rápido de websites.</h2>
+            <p>Por padrão o <b>Pinax</b> trás uma série de templates prontos de projetos web, com funcionalidades muito comuns, como as citadas anteriormente e muitas outras.</p>
+            <pre class="brush: html">
+$ pip install Pinax
+$ pinax-admin setup_project -b basic minha_redesocial
+$ python manage.py syncdb
+$ python manage.py runserver
+            </pre>
         </div>
 
         <div class="slide">
@@ -106,6 +245,7 @@
 Foo
 Foo
 Foo
+ &lt;language&gt;
             </pre>
         </div>
         
