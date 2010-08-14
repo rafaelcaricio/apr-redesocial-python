@@ -88,9 +88,6 @@
                 <li>...</li>
                 <li>Resumindo: <b>NERD</b>!</li>
             </ul>
-            <!--
-                Falar um pouco sobre mim e ser bem breve nessa parte.
-            -->
         </div>
 
         <div class="slide">
@@ -101,81 +98,12 @@
                     <ul><li>O que existe <b>open source</b> que pode me ajudar a criar minha rede social.</li></ul>
                 </li>
                 <li>Possibilidades;
-                    <ul><li>O que é importante para quando criar uma rede social e não ser mais uma cópia.</li></ul>
+                    <ul><li>O que deve ser pensado para não se criar uma rede social e e ser apenas mais uma cópia.</li></ul>
                 </li>
                 <li>Experiências!
-                    <ul><li>O que eu já experimentei e o que eu aprendi, até agora, com minha rede social.</li></ul>
+                    <ul><li>O que eu já experimentei e o que eu aprendi, até agora, no desenvolvimento de uma rede social.</li></ul>
                 </li>
             </ul>
-<!--
-[Guia geral para a apresentação]
-
-Tecnologia:
-Dizer que vai mostrar tecnologias disponiveis na web para ajudar no desenvolvimento de uma nova rede. Muita coisa tem que ser feita.
-
-Cadastro de usuário, 
-login/logoff do usuario,
-validação de e-mail, 
-modificar senha, 
-esqueci a senha, 
-salvar o login, 
-configurações de recebimento de e-mail,
-enviar recado pra outro usuário,
-adicionar como amigo,
-notificar conteúdo indevido,
-uma forma de enviar avisos a todos os usuários do site de uma só vez,
-foto do perfil,
-perfil do usuario,
-pesquisa de usuário,
-exclusão de conta de usuário,
-comunidades com lista de discussão,
-pesquisa de grupos e no forúm,
-microblogging,
-...
-Coisas comuns em praticamente toda rede social.
-
-Mostrar que não precisa sair do zero.
-
-Funcionalidades que teem que ser implementadas antes e são bastante comuns em todos as redes sociais e na maioria dos sistemas web. 
-Motivado por este pensamento um cara tem a ideia de criar um "gerador de projetos em django". Mostrar o pinax (dizer o que é 
-e como funciona) criar 2 tipos de projetos usando o pinax. 
-
-Sobre o pinax, dizer que é feito sobre o django. É um engine que gera outros projetos em django já configurados e com funcionalidades básicas 
-já implementadas e funcionando. 
-
-Apresentar os principais projetos que existem dentro do pinax e como ajudam no desenvolvimento de uma rede social.
-
-Possibilidades:
-Utilizando estas tecnologias você pode focar no que é o diferencial da sua rede social e não perder tempo com coisas que são comuns.
-Agora você pode criar uma nova forma de iteração entre os seus usuários e focar no desenvolvimento disso.
-Redes que não tiveram um foco especifico como diferencial, acabaram indo por água a baixo.
-Exemplos: 
-http://www.gazzag.com/ -> http://www.octopop.com/
-http://www.1grau.com.br/
-
-Refs.: http://pt.wikipedia.org/wiki/1Grau, http://pt.wikipedia.org/wiki/Gazzag
-
-"Como vou fazer diferente? Tem tanta rede social por ai..."
-
-Faça diferente: 
-linkedin.com - Rede social de negócios;
-last.fm - Rede social de música;
-Livemocha.com - Rede social de pessoas que querem aprender outras linguas;
-Etc...
-
-"Isso só acontece no exterior? E aqui no Brasil, não dá pra inovar?"
-
-Exemplos nacionais:
-skoob.com.br - rede social de leitores, 
-filmow.com - rede social de cinéfolos (em python/django),
-atepassar.com - rede social de concurseiros;
-
-
-Experiências:
-Dizer que criou o atepassar.com e como foi/está sendo o desenvolvimento desta rede social.
-Mostrar como foi a concepção do AtéPassar até hoje. Quais os desafios que foram encontrados e quais os próximos desafios que estão
-por vir.
--->
         </div>
 
         <div class="slide">
@@ -189,7 +117,7 @@ por vir.
 
         <div class="slide">
             <div class="vcenter">            
-                <h1>Funcionalidades que devem ser desenvolvidas e que toda rede social tem:</h1>
+	            <h1>Funcionalidades que devem ser desenvolvidas e que toda rede social tem:</h1>
                 <center>
                     <div>
                         <span style="font-size:2.2em;"><b>cadastro de usuário</b></span>
@@ -213,9 +141,15 @@ por vir.
                 </center>
             </div>
         </div>
+		
+		<div class="slide">
+			<div class="vcenter">   
+				<center><h2>"Se é tudo parecido, bem que poderia ter uma plataforma com tudo isso pronto..."</h2></center>
+			</div>
+        </div>
 
         <div class="slide">
-            <h1>Algém já pensou nisso...</h1>
+            <h1>Alguém já pensou nisso...</h1>
                 <center>
                     <img src="pinax_logo.png" alt="">
                     <img src="seu-creysson.jpg" alt="">
@@ -224,71 +158,181 @@ por vir.
         </div>
 
         <div class="slide">
-            <h1>Pinax, o que é isso?</h1>
-            <h2>Uma plataforma para desenvolvimento rápido de websites.</h2>
-            <p>Por padrão o <b>Pinax</b> trás uma série de templates prontos de projetos web, com funcionalidades muito comuns, como as citadas anteriormente e muitas outras.</p>
+				<center style="margin-bottom: 10px;">
+				<a target="_blank" href="http://pinaxproject.com/"><img src="pinax_logo.png" alt="Pinax Logo"></a>
+				</center>
+			<div class="vcenter">
+	            <h2>Uma plataforma para desenvolvimento rápido de websites.</h2>
+	            <p>Por padrão o <b>Pinax</b> trás uma série de templates prontos de projetos web sobre o framework <b>Django</b>. 
+				Agrega funcionalidades muito comuns, como as citadas anteriormente e muitas outras.</p>
+				<p>Você obtém um projeto Django totalmente configurado e pronto para ser usado.</p>
+			</div>
+        </div>
+		
+		<div class="slide">
+			<h1>Tipos de projetos prontos do Pinax</h1>
+			<p>Os mais interessantes para a criação de redes sociais são:</p>
+			<ul>
+				<li><b style="font-size: 25px;">private_beta</b>
+					<ul>
+						<li>Este projeto demonstra o uso de uma lista de espera e de códigos de acesso para sites em beta privado.</li>
+					</ul>
+				</li>
+				<li><b style="font-size: 25px;">social</b>
+					<ul>
+						<li>Este projeto demonstra um site de rede social com profiles, possibilidade de adicionar como amigo, fotos, grupos, wikis, favoritos, envio de mensagens entre usuários (scrap) etc.</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Existem outros projetos de CMS, Intranet, etc.</p>
+		</div>
+		
+		<div class="slide">
+			<h1>É complicado instalar e ter minha primeira rede social funcionando?</h1>
+			<div class="vcenter">
+			<p>Tire suas próprias conclusões:</p>
             <pre class="brush: html">
 $ pip install Pinax
-$ pinax-admin setup_project -b basic minha_redesocial
+$ pinax-admin setup_project -b private_beta minha_redesocial
 $ python manage.py syncdb
 $ python manage.py runserver
             </pre>
-        </div>
+			</div>
+		</div>
 
-        <div class="slide">
-            <h1>Layouts</h1>
-            <h2>This slide uses the "alt" layout</h2>
-            <p>It inherits the class "nochrome" of the layout, which allows you to style it differently, and it doesn't have the footer div that the default layout has for example</p>
-            <p>By default, all slides use the default layout if it's present</p>
-            <p>Layouts must have a &lt;content&gt;&lt;/content&gt; tag that will be replaced by each slide's content</p>
-            <pre class="brush: html">
-Foo
-Foo
-Foo
- &lt;language&gt;
-            </pre>
-        </div>
         
         <div class="slide">
-            <h1>Syntax Highlighting</h1>
-            <p>Code is just pre tags with class="brush: &lt;language&gt;"</p>
-            <p>The eval class combined with the js brush makes that Execute link appear on the right</p>
-            <pre class="brush: js eval">
-                // in eval'd block, slide is the current slide
-                $(slide).css('background', '#533');
-                // and node is the code block
-                $(node).css('opacity', '.1');
-            </pre>
-            <p>Nifty feature for JS devs doing presentations</p>
-            <br />
-            <p>Also if you use alert() in your code, it's piped into those nicer boxes</p>
-            <pre class="brush: js eval">
-                alert('test');
-            </pre>
-            <p>This is really great to provide interaction during a presentation</p>
+            <h1>Possibilidades, e agora?</h1>
+			<div class="vcenter">
+				<ul style="list-style: none;"><li>
+				<ul>
+	            	<li>Com o pinax você obtém o básico que seu projeto precisa para começar a ser desenvolvido.</li>
+					<li>Assim, você pode manter o foco no que é interessante e no diferencial que a sua rede social vai ter em relação as existentes.</li>
+				</ul>
+				</li>
+				</ul>
+			</div>
+        </div>
+		
+		<div class="slide">
+            <h1>Mantenha o foco no diferencial</h1>
+			<div class="vcenter">
+            	<ul style="list-style: none;"><li>
+            		<ul>
+            			<li>Redes sociais que não tiveram um foco específico como diferencial, acabaram indo por água a baixo.</li>
+						<ul>
+							<li>Gazzag.com - Clone das funcionalidades do Orkut e fechou as portas.</li>
+							<li>1grau.com.br - Também era uma cópia das funcionalidades do Orkut e não existe mais.</li>
+						</ul>
+            		</ul>
+            	</li>
+				</ul>
+			</div>
+        </div>
+		
+		<div class="slide">
+			<div class="vcenter">   
+				<center><h2>"Como vou fazer diferente? Tem tanta rede social por ai..."</h2></center>
+			</div>
+        </div>
+		
+		<div class="slide">
+            <h1>Faça diferente</h1>
+			<div class="vcenter">
+            	<ul style="list-style: none;">
+					<li>
+	            		<ul>
+	            			<li>Descubra um nicho em aberto, um perfil de um grande grupo de pessoas que foi inexplorado ou mal explorado.</li>
+							<ul>
+								<li><a target="_blank" href="http://www.linkedin.com/">LinkedIn.com</a> - Rede social de negócios.</li>
+								<li><a target="_blank" href="http://www.last.fm/">Last.FM</a> - Rede social de música.</li>
+								<li><a target="_blank" href="http://www.livemocha.com/">Livemocha.com</a> - Rede social de pessoas que querem aprender outras linguas.</li>
+							</ul>
+	            		</ul>
+            		</li>
+				</ul>
+			</div>
+        </div>
+		
+		<div class="slide">
+			<div class="vcenter">   
+				<center><h2>"Isso só acontece no exterior? E aqui no Brasil, dá pra inovar?"</h2></center>
+			</div>
+        </div>
+		
+		
+		<div class="slide">
+            <h1>Redes sociais genuinamente brasileiras</h1>
+			<div class="vcenter">
+            	<ul style="list-style: none;"><li>
+            		<ul>
+            			<li>No Brasil também tem gente fazendo redes socias de nicho com qualidade.</li>
+						<ul>
+							<li><a target="_blank" href="http://www.skoob.com.br/">Skoob.com.br</a> - Rede social de leitores.</li>
+							<li><a target="_blank" href="http://www.filmow.com/">Filmow.com</a> - Rede social de cinéfolos.</li>
+							<li><a target="_blank" href="http://www.atepassar.com/">AtePassar.com</a> - rede social de estudantes de concursos públicos.</li>
+						</ul>
+            		</ul>
+            	</li>
+				</ul>
+			</div>
+        </div>
+		
+		<div class="slide">
+            <div class="vcenter">
+            <h1>Desenvolvimento da rede social AtéPassar</h1>
+            	<ul style="list-style: none;"><li>
+            		<ul>
+            			<li>Começamos com o Pinax.</li>
+						<li>Evoluimos a rede adicionando funcionalidades diferênciadas:
+							<ul>
+								<li>Plano de estudo com acompanhamento dos estudos;</li>
+								<li>Resolução de questões;</li>
+								<li>Estátisticas de questões resolvidas;</li>
+								<li>E muitos outros vindo por ai...</li>
+							</ul>
+						</li>
+            		</ul>
+            	</li>
+				</ul>
+			</div>
+        </div>
+		
+		<div class="slide">
+            <h1>O que motiva?</h1>
+            <ul>
+            	<li>Mais de 8.000 usuários cadastrados em menos de 6 meses;</li>
+				<li>Em torno de 1.000 acessos únicos diáriamente e crescendo a cada dia;</li>
+				<li>Descobrir outros sites e blogs mencionando sua rede (e você nem sabe em são os responsáveis pelos posts);</li>
+				<li>Ver os usuários interagindo na rede que você criou.</li>
+            </ul>
         </div>
 
-        <div class="slide">
-            <h1>Syntax Highlighting</h1>
-            <pre class="brush: php">
-                function foo($var) {
-                    // this is some php code as an example
-                    $foo = new Class("meh");
-                    $foo->bar();
-                }
-            </pre>
-            <p>That's it for now, enjoy!</p>
+		<div class="slide">
+			<div class="vcenter">
+            <center><img src="parabenizacoes.png" alt=""></center>
+			</div>
+        </div>
+		
+		<div class="slide">
+			<div class="vcenter">   
+				<center><h2>É sua vez...</h2></center>
+			</div>
+        </div>
+		
+		<div class="slide">
+			<div class="vcenter">   
+				<center><h2>Perguntas? :)</h2></center>
+			</div>
         </div>
         
         <div class="layout" name="default">
-            <!--h1>Some title</h1-->
             <content></content>
             <div class="footer">
-            <span class="left"><img src="engine/logo.png" alt="" /></span>
+            <span class="left"><a target="_blank" href="http://atepassar.com/"><img src="engine/logo.png" alt="" /></a></span>
             <span class="right"><strong>Rafael Carício</strong></span>
             <span class="right"><small>rafael@orygens.com | <a target="_blank" href="http://twitter.com/rafaelcaricio"><img src="engine/twitter.png" alt="" width="50%" /> @rafaelcaricio</a></small></span>
             <hr class="defloat" />
-
             </div>
         </div>
         
